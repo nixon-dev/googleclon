@@ -1,0 +1,474 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font: 62.5%;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+}
+
+/* 
+Notas del a:
+text-decoration para eliminar el subrayado de los elementos li
+cursor: pointer para mostar el icono de mano al pasar por los 
+elementos.
+*/
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 
+Notas del header:
+Se utiliza width y height para darle la 
+anchura máxima de 100% a la cabecera y el 60px 
+es la altura que se brinda a la cabecera.
+*/
+
+header{
+width: 100%;
+height: 60px;
+}
+
+/* 
+Notas del header nav:
+Se selecciona diplay; flex para hacer los elementos flexibles
+y luego se aplica en justify el flex-end para dejar los elementos
+a la mano derecha
+*/
+
+header nav{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+/* 
+Notas del header nav .section-right:
+width: para determinar la anchura.
+height:auto para que la altura 
+Display: para la flexibilidad de los elementos.
+List-style: elimina las viñetas de los elementos li.
+Justify-content: alinea los elementos al centro de la anchura.
+Text-align: ubica los elementos de manera horizontal y centreado.
+*/
+
+header nav .section-right{
+    width: 310px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+}
+
+/* 
+Notas de section-right li:
+Se utiliza margin-right para darle espacio entre los li
+*/
+
+.section-right li{
+    margin-right: 10px;
+}
+
+#menu{
+    padding-top: 50p;
+}
+/* 
+Notas del section-right li a:
+Se utiliza section-right li a para cambiarle el color a los 
+elementos li a negro
+*/
+
+
+
+.section-right li a{
+    color: black;
+}
+
+/* 
+.section-right .icon:
+- background-image ubica la dirección de la imagen que necesitamos.
+- no-repeat se utiliza para no repetir la imagen varias veces en el 
+  background.
+- background-position se utiliza para ubicar la imagen desde una posición.
+- background-size se utiliza para que el tamaño de la imagen este de acuerdo
+  a las dimensiones de nuestro height.
+*/
+
+.section-right .icon{
+    background-image: url(./img/categories.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    margin-top: 7px;
+}
+
+/* 
+Notas del .section-right .inicio-sesion:
+color se utiliza para cambiarle el color de la letra al texto de "a".
+*/
+
+.section-right .inicio-sesion a{
+    color: white;
+}
+
+.section-right .menu{
+    padding-top: 10px;
+}
+/* 
+Notas del section-right .inicio-sesion:
+background para darle color al fondo del texto.
+padding de 10px para determinar los rellenos del background.
+padding right para los rellenos de la izquierda.
+padding-left para los rellenos de la derecha.
+border-radius para determinar un borde redondeado.
+*/
+
+.section-right .inicio-sesion{
+    background: hsl(234, 91%, 45%);
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 4px;
+}
+
+/* 
+Notas del main:
+margin-top para determinar el espacio desde arriba.
+text-align para centrear todo los contenidos que estan 
+dentro de main.
+*/
+
+main{
+    margin-top: 70px;
+    text-align: center;
+}
+
+/* 
+Notas del .main-contenedor-logo:
+width para determinar la anchura del contenedor.
+margin 0 auto para centrear los contenidos sin márgenes.
+margin-botton para determinar el espacio del logo con el 
+elemento de abajo.
+*/
+
+main .main-contenedor-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+/* 
+Notas del .main-contenedor-logo img:
+Básicamente se utiliza widht y height para determinar la
+anchura y la altura que tendrá el logo de Google.
+*/
+
+main .main-contenedor-logo img{
+    width: 272px;
+    height: 92px;
+}
+
+/* 
+Notas del .main-contenedor-find:
+width para determinar la anchura del contenedor.
+margin 0 auto para centrear el contenido sin margenes.
+margin-botton para determinar el espacio del logo con el 
+elemento de abajo.
+*/
+
+main .main-contenedor-find{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+/* 
+Notas del .main-contenedor-input:
+- width para determinar la anchura del contenedor.
+- border-radius para redondear el div principal del buscador.
+- border 1 px para darle tamaño y color al borde.
+- display flex para dar flexibilidad a los elementos
+  que están dentro del buscador.
+- justify-content para centrear los elementos.
+- align-items para alinear al centro los espacios de cada 
+  contenido.
+*/
+
+main .main-contenedor-input{
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 
+Notas del .main-contenedor-input input:
+width y height para determinar el tamaño del input.
+border para quitarle los bordes.
+outline para eliminar el color celeste que el navegador 
+trae por defecto.
+*/
+
+.main-contenedor-input input{
+    width: 450px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+
+/* 
+Notas del .main-contenedor-input:hover
+box-sgadow para darle sombra al input.
+border-color para darle color al pasar el mouse.
+*/
+
+.main-contenedor-input:hover{
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+
+/* 
+Notas del .main-contenedor-find .find-icon:
+- background-image ubica la dirección de la imagen que necesitamos.
+- no-repeat se utiliza para no repetir la imagen varias veces en el 
+  background.
+- background-position se utiliza para ubicar la imagen desde una posición.
+- background-size se utiliza para que el tamaño de la imagen este de acuerdo
+  a las dimensiones de nuestro height.
+- margin-right para mover la imagen un poco hacia la izquierda.
+*/
+
+.main-contenedor-find .find-icon{
+    background-image: url(./img/find.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+}
+
+/* 
+Notas del .main-contenedor-find .micro-icon:
+- background-image ubica la dirección de la imagen que necesitamos.
+- no-repeat se utiliza para no repetir la imagen varias veces en el 
+  background.
+- background-position se utiliza para ubicar la imagen desde una posición.
+- background-size se utiliza para que el tamaño de la imagen este de acuerdo
+  a las dimensiones de nuestro height.
+- cursor: pointer para que aparezca el icono de manito al pasarle 
+  a la imagen de micrófono.
+*/
+
+.main-contenedor-find .micro-icon{
+    background-image: url(./img/microfon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+/* 
+Notas del .main-contenedor-button:
+width para determinar la anchura del contenedor.
+margin o auto para centrear los div y eliminar márgenes.
+*/
+
+.main-contenedor-button{
+    width: 530px;
+    margin: 0 auto;
+}
+
+/* 
+Notas del .main-contenedor-button div:
+display inline-block para acomodar los div a lado del otro.
+*/
+
+.main-contenedor-button div{
+    display: inline-block;
+}
+
+/*Notas del .main-contenedor-button buton:
+- height determina la altura de cada botón.
+- border 0 elimina los bordes por defecto.
+- background-color le brinda color a los botones.
+- font-size determina el tamaño de las letras.
+- color determina el color de las letras.
+- border-radius determina los bordes de los botones.
+- padding ubica el elemento dentro de los botones de acuerdo
+  a nuestro pixelajes.
+- margin-right para separar un poco los botones.
+*/
+
+.main-contenedor-button button{
+    height: 40px;
+    border: 0;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    color: rgb(48, 48, 48);
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-right: 15px;
+}
+
+/*Notas del .main-contenedor-button buton:hover
+- border para determinar el tamaño del borde y el color.
+- box-shadow para la sombra de los botones al pasar el mouse.
+- color para determinar el color de las letras.
+- background-color para el color de fondo al pasar el mouse.
+*/
+
+.main-contenedor-button button:hover{
+    border: 1px solid #c6c6c6;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+    background-color: #f8f8f8;
+}
+
+/*
+Notas del .main-contenedor-parrafo p:
+font-size para el tamaño del texto.
+margin-top para separarlo un poco del elemento de arriba.
+*/
+
+.main-contenedor-parrafo p{
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+/*
+Notas del .main-contenedor-parrafo p a:
+color para cambiarle el color por defecto del a.
+*/
+
+.main-contenedor-parrafo p a{
+    color:  hsl(234, 100%, 33%);
+}
+
+/*
+Notas del .main-contenedor-parrafo p a:hover
+text-decoration-line: underline para subrayar el texto.
+*/
+
+.main-contenedor-parrafo p a:hover{
+    text-decoration-line: underline;
+}
+
+/*
+Notas del footer:
+width para la anchura del 100% de la página.
+height con la altura de 50px.
+position: absolut para que no se mueva del footer.
+bottom en 0 para no dejar espacios abajo del footer.
+*/
+
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #f2f2f2;
+}
+
+/*
+Notas del footer .ubicacion:
+margin- para mover un poco hacia la izquierda.
+height para definir la altura del div.
+*/
+
+footer .ubicacion{
+    margin-left: 30px;
+    height: 30px;
+}
+
+/*
+Notas del footer .ubicación p:
+color para definir el color de la letra.
+margin-top para bajar un poco la letra.
+font-size para definir el tamaño de la letra.
+*/
+
+footer .ubicacion p{
+    color: #5f6368;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+/*
+Notas del footer .widget:
+Se utilizo el display: grid para dividir la sección en 2
+grid-template-column define las fracciones que tendrá el grid.
+align-items alienea al centro los elementos.
+*/
+
+footer .widget{
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid #e4e4e4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+/*
+Notas del footer ul:
+list-style le quita lo por defecto a las viñetas.
+display: flex es importante para flexibilizar los elementos
+dentro de cada grid.
+*/
+
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+}
+
+/*
+Notas del .widget .left & right:
+justify-selt mueve los elementos hacia una dirección por el uso
+del grid.
+*/
+
+.widget .left {
+    justify-self: left;
+    margin-left: 10px;
+}
+
+.widget .right{
+    justify-self: right;
+    margin-right: 10px;
+}
+
+/*
+Notas del footer ul li a:
+margin para separar un poco cada li y color para cambiarle
+el color de la fuente.
+*/
+
+footer ul li a{
+    margin: 10px;
+    color: #5f6368
+}
+
+/*
+Notas del footer ul li a:hover
+text-decoration-line sirve para subrayar un texto.
+*/
+
+footer ul li a:hover{
+    text-decoration-line: underline;
+}
